@@ -12,6 +12,7 @@ Project 5 of the Robotics Software Engineering Nanodegree Program at Udacity. Pr
 
 ## Directory structure -->
 
+    ├── Pictures                       # Picture of the Gazebo world and the Turtlebot used in this project 
     ├── add_markers                    # my_robot package                   
     │   ├── add_markers.cpp            # C++ code that added markers in Rviz at the positions of object pick-up and drop-off
     ├── map                            # map to be used for the localization test 
@@ -36,4 +37,9 @@ Project 5 of the Robotics Software Engineering Nanodegree Program at Udacity. Pr
     ├── turtlebot_teleop               # launch file to run the teleop node to drive the mobile robot
     │   ├── keyboard_teleop.launch     
     
-    
+## Media
+
+Link to the demo video (preview may be of low quality) --> https://waynestateprod-my.sharepoint.com/:v:/g/personal/hg2963_wayne_edu/EWuulAESLExGs5NHU4U-bWUBSbBTy-Cdn_LzWnb7H0d51A?e=wrJZFE
+
+
+
