@@ -1,8 +1,7 @@
 # HomeServiceRobot-RSE
-Project 5 of the Robotics Software Engineering Nanodegree Program at Udacity
 
-## Objectives -->
-Program a home service robot using ROS that automatically maps an environment and navigates to pickup and deliver objects in Gazebo. 
+## Description -->
+Project 5 of the Robotics Software Engineering Nanodegree Program at Udacity. Program a home service robot using ROS that automatically maps an environment and navigates to pickup and deliver objects in Gazebo. 
 
 ## Outcomes -->
 
@@ -13,34 +12,28 @@ Program a home service robot using ROS that automatically maps an environment an
 
 ## Directory structure -->
 
-    ├── my_robot                       # my_robot package                   
-    │   ├── launch                     # launch folder for launch files
-    │   │   ├── RvizLaunch.launch
-    │   │   ├── amcl.launch
-    │   │   ├── robot_descriptionGoChaseIt.launch
-    │   │   ├── worldGoChaseIt.launch
-    │   │   ├── mapping.launch         # runs the nodes of the RTAB-Map package
-    │   │   ├── teleop.launch          # runs the node for the teleoperation package used to move the mobile robot
-    │   ├── model                      # folder containing the Gazebo world model
-    │   │   ├── homeGoChaseIt
-    │   │   │   ├── model.config
-    │   │   │   ├── model.sdf
-    │   ├── meshes                     # meshes folder for the lidar sensor
-    │   │   ├── hokuyo.dae
-    │   ├── urdf                       # urdf folder for xarco files
-    │   │   ├── my_robotGoChaseIt.gazebo
-    │   │   ├── my_robotGoChaseIt.xacro
-    │   ├── worlds                     # world folder for world files
-    │   │   ├── homeGoChaseIt
-    │   │   ├── homeGoChaseIt.world
-    │   │   ├── myApartment
-    │   ├── CMakeLists.txt             # compiler instructions
-    │   ├── package.xml                # package info
-    ├── teleop_twist_keyboard          # Tele-operation package for navigating the mobile robot in Gazebo
-    │   ├── CHANGELOG.rst              
-    │   ├── CMakeLists.txt             
-    │   ├── README.md                  
-    │   ├── package.xml                # package info
-    │   ├── teleop_twist_keyboard.py   # package info
-    └── Media                          # screenshots of the world and the mobile robot in Gazebo, 3D map of the world and the 2D occupancy grid map generated using SLAM 
+    ├── add_markers                    # my_robot package                   
+    │   ├── add_markers.cpp            # C++ code that added markers in Rviz at the positions of object pick-up and drop-off
+    ├── map                            # map to be used for the localization test 
+    │   ├── map.pgm                     
+    │   ├── map.yaml
+    ├── pick_objects                   
+    │   ├── pick_objects.cpp           # C++ code to drive to goal locations for pick-up and drop-off of objects
+    ├── rvizConfig                     # Configuration setup file for Rviz
+    │   ├── homeservicerobotConfig.rviz 
+    ├── scripts                        # Shell scripts to launch nodes to run the home service robot
+    │   ├── add_marker.sh              # Shell script to add markers in Rviz at the pick-up and drop-off virtual objects
+    │   ├── home_service.sh            # Shell script to run nodes that get the home service robot running
+    │   ├── pick_objects.sh            # Shell script to run nodes that drives the mobile robot to the pick-up and drop-off locations
+    │   ├── test_navigation.sh         # Shell-script to run the nodes used to test the navigation algorithm 
+    │   ├── test_slam.sh               # Shell-script to run the nodes used to test the slam algorithm
+    ├── turtlebot_gazebo               # launch files to test localization and mapping tasks
+    │   ├── amcl_demo.launch                   
+    │   ├── gmapping_demo.launch       
+    │   ├── turtlebot_world.launch
+    ├── turtlebot_rviz_launchers       # launch file to run Rviz
+    │   ├── view_navigation.launch     
+    ├── turtlebot_teleop               # launch file to run the teleop node to drive the mobile robot
+    │   ├── keyboard_teleop.launch     
+    
     
