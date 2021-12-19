@@ -1,7 +1,7 @@
 # HomeServiceRobot-RSE
 
 ## Description -->
-Project 5 of the Robotics Software Engineering Nanodegree Program at Udacity. Program a home service robot using ROS that automatically maps an environment and navigates to pickup and deliver objects in Gazebo. 
+Project 5 of the Robotics Software Engineering Nanodegree Program at Udacity. Program a home service robot using ROS that automatically maps an environment and navigates to pickup and deliver virtual objects in Gazebo. A green and square marker had to be initially displayed at the pick-up location. Once the virtual object was picked up, the marker had to shift to the drop-off location. 
 
 ## Outcomes -->
 
